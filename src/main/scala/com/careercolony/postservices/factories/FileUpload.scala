@@ -45,7 +45,7 @@ trait FileUpload extends DatabaseAccess {
   def getImageName(actualFileName: Option[String]): String = {
     import java.util.{Base64, UUID}
     val fileName: String = UUID.randomUUID().toString
-    val filePath: String = "/Users/carlnjoku/image-uploads/"
+    val filePath: String = "/assets/uploads/"
     val base64FileName: String =
       Base64.getEncoder.encodeToString(fileName.getBytes())
     val fileFormat: String = actualFileName.getOrElse(".txt").split('.')(1)

@@ -46,7 +46,7 @@ trait ProfileBgUpload extends DatabaseAccess {
   def getProfileBgName(memberID:String, actualFileName: Option[String]): String = {
     import java.util.{Base64, UUID}
     val fileName: String = "profile_profile_background"+ memberID.toString
-    val filePath: String = "/Users/carlnjoku/image-uploads/background/"
+    val filePath: String = "/assets/uploads/background/"
     val base64FileName: String = Base64.getEncoder.encodeToString(fileName.getBytes())
     val fileFormat: String = "jpg"
     filePath + base64FileName + "." + fileFormat

@@ -17,7 +17,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for file-upload-api#file-upload-api_2.11;1.2 [compile][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies file-upload-api#file-upload-api_2.11;1.2->org.scala-lang#scala-library;2.11.12 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.11.12 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e49d5c4[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@51a90999[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.11.12[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.11.12 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.11.12] org.scala-lang#scala-library;2.11.12[0m
@@ -4495,7 +4495,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.11.12!scala-reflect.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.11;1.0.5!scala-xml_2.11.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] jline#jline;2.14.3!jline.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 4308ms :: artifacts dl 54ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 6616ms :: artifacts dl 73ms[0m
 [0m[[0mdebug[0m] [0m	report for file-upload-api#file-upload-api_2.11;1.2 universal produced in /Users/carlnjoku/scala/client/careercolony/kafka-consumer-file-upload-V3/target/resolution-cache/reports/file-upload-api-file-upload-api_2.11-universal.xml[0m
 [0m[[0mdebug[0m] [0m	report for file-upload-api#file-upload-api_2.11;1.2 universal-docs produced in /Users/carlnjoku/scala/client/careercolony/kafka-consumer-file-upload-V3/target/resolution-cache/reports/file-upload-api-file-upload-api_2.11-universal-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for file-upload-api#file-upload-api_2.11;1.2 universal-src produced in /Users/carlnjoku/scala/client/careercolony/kafka-consumer-file-upload-V3/target/resolution-cache/reports/file-upload-api-file-upload-api_2.11-universal-src.xml[0m
@@ -4517,7 +4517,7 @@
 [0m[[0mdebug[0m] [0m	report for file-upload-api#file-upload-api_2.11;1.2 docs produced in /Users/carlnjoku/scala/client/careercolony/kafka-consumer-file-upload-V3/target/resolution-cache/reports/file-upload-api-file-upload-api_2.11-docs.xml[0m
 [0m[[0mdebug[0m] [0m	report for file-upload-api#file-upload-api_2.11;1.2 pom produced in /Users/carlnjoku/scala/client/careercolony/kafka-consumer-file-upload-V3/target/resolution-cache/reports/file-upload-api-file-upload-api_2.11-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for file-upload-api#file-upload-api_2.11;1.2 scala-tool produced in /Users/carlnjoku/scala/client/careercolony/kafka-consumer-file-upload-V3/target/resolution-cache/reports/file-upload-api-file-upload-api_2.11-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (4308ms resolve - 54ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (6616ms resolve - 73ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
 [0m[[33mwarn[0m] [0mThere may be incompatibilities among your library dependencies.[0m
 [0m[[33mwarn[0m] [0mHere are some of the libraries that were evicted:[0m

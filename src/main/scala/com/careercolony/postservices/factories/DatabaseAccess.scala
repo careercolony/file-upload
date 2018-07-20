@@ -46,7 +46,7 @@ trait DatabaseAccess {
   def getFileName(memberID:String, actualFileName: Option[String]): String = {
     import java.util.{Base64, UUID}
     val fileName: String = "profile_avatar"+ memberID.toString
-    val filePath: String = "http://localhost/image-uploads/avatar/"
+    val filePath: String = "/assets/uploads/avatar/"
     val base64FileName: String = Base64.getEncoder.encodeToString(fileName.getBytes())
     val fileFormat: String = "jpg"
     filePath + base64FileName + "." + fileFormat
@@ -62,7 +62,13 @@ trait DatabaseAccess {
 
   def processFileNew(fileData: Multipart.FormData, id: Option[Int] = None): Future[String] = {
     val postID: Option[Int] = id
+    // Base64 encode
+      val text = "this.jpg"
+      val bytesEncoded = java.util.Base64.getEncoder.encode(text.getBytes())
 
+      // Base64 decode
+      val textDecoded = new String(java.util.Base64.getDecoder.decode(bytesEncoded))
+      println(bytesEncoded)
     fileData.parts.mapAsync(1) { bodyPart ⇒
       bodyPart.name match {
         case "file" =>
@@ -89,6 +95,7 @@ trait DatabaseAccess {
     }.runFold(BSONDocument())((x, y) => x.merge(y))
       .map(bsonData => {
         returnAvatarName(bsonData)
+        
       })
   }
 
